@@ -16,7 +16,7 @@ vinNum.addEventListener('submit', function(event){
     let dispType = document.getElementById('type')
     let vin = this.children[0].value
     
-    fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/${vin}*BA?format=json`)
+    fetch(`https://vpic.nhtsa.dot.gov/api//vehicles/DecodeVinExtended/${vin}*BA?format=json`)
     .then(resp => resp.json())
     .then(data => {
         console.log(data);
